@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>탭 자동 정렬 설정</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        
+        <header>
+            <h1>그룹화 규칙</h1>
+            <p>사용자 지정 탭 그룹화 규칙을 관리하세요.</p>
+        </header>
+
+        <div class="card">
+            <h2>새 규칙 추가</h2>
+            <form id="add-rule-form">
+                <input type="text" id="pattern-input" placeholder="URL 패턴 (예: *.google.com)" required>
+                <input type="text" id="group-name-input" placeholder="그룹 이름 (예: Google)" required>
+                <button type="submit">추가</button>
+            </form>
+        </div>
+
+        <div class="rules-list-container">
+            <div class="rules-list-header">
+                 <h2>내 규칙 목록</h2>
+                 <input type="text" id="search-input" placeholder="규칙 검색...">
+            </div>
+           
+            <div id="empty-state" class="hidden" style="padding: 3rem; text-align: center;">
+                <h3 style="font-size: 1.25rem; font-weight: 600;">규칙이 아직 없습니다</h3>
+                <p style="margin-top: 0.25rem; font-size: 0.875rem; color: #4b5563;">위 양식을 사용하여 첫 번째 규칙을 추가하세요.</p>
+            </div>
+
+            <div id="rules-container">
+                <!-- Rule cards will be dynamically added here -->
+            </div>
+        </div>
+
+    </main>
+
+    <script src="dist/options.js"></script>
+</body>
+</html>

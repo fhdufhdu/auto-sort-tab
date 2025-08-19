@@ -1,0 +1,17 @@
+{
+  "name": "auto-sort-tab",
+  "version": "1.0.0",
+  "description": "혹시 난잡한 탭 때문에 고민이 많으셨나요? 원하는 탭 찾기가 불편하셨나요? 도메인 별로 자동정렬된 탭으로 이전보다 쉽게 찾아보는 건 어떨까요?",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chrome": "^0.1.4",
+    "typescript": "^5.9.2"
+  }
+}

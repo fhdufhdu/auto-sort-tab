@@ -7,7 +7,9 @@
   "action": {
     "default_title": "도메인별 탭 정렬"
   },
+  "options_page": "options.html",
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "dist/main.js",
+    "type": "module"
   }
 }
